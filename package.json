@@ -1,0 +1,12 @@
+{
+  "name": "@scola/api-codec-url-encoded",
+  "version": "0.0.0",
+  "description": "URL Encoded Codec",
+  "repository": "github:scola84/node-api-codec-url-encoded",
+  "author": "M.C. van den Boogaart <scola@kvdb.name>",
+  "license": "MIT",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0"
+  }
+}

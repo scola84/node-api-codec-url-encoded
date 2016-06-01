@@ -6,9 +6,9 @@ export const codec = {
   Decoder
 };
 
-export function decoder(options) {
+export function decoder() {
   return {
     type,
-    create: () => new Decoder(options)
+    create: () => new Decoder()
   };
 }

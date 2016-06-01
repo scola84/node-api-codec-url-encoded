@@ -1,7 +1,7 @@
-const querystring = require('querystring');
-const stream = require('stream');
+import { parseQuery } from '@scola/http';
+import { Transform } from 'stream';
 
-class UrlDecoder extends stream.Transform {
+export default class UrlDecoder extends Transform {
   constructor() {
     super({
       objectMode: true
@@ -17,7 +17,7 @@ class UrlDecoder extends stream.Transform {
 
   _flush(callback) {
     try {
-      this.push(querystring.parse(this.data));
+      this.push(parseQuery(this.data));
       callback();
     } catch (error) {
       callback(error);
@@ -25,5 +25,3 @@ class UrlDecoder extends stream.Transform {
 
   }
 }
-
-module.exports = UrlDecoder;

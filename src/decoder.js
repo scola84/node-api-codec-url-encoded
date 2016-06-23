@@ -1,4 +1,4 @@
-import { parseQuery } from '@scola/http';
+import { parse as parseQuery } from 'querystring';
 import { Transform } from 'stream';
 
 export default class UrlDecoder extends Transform {

@@ -3,7 +3,8 @@ const type = 'application/x-www-form-urlencoded';
 import { default as Decoder } from './src/decoder';
 
 export const codec = {
-  Decoder
+  Decoder,
+  type
 };
 
 export function decoder() {

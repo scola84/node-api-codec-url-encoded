@@ -1,6 +1,6 @@
 {
   "name": "@scola/api-codec-url-encoded",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "URL Encoded Codec",
   "repository": "github:scola84/node-api-codec-url-encoded",
   "author": "M.C. van den Boogaart <scola@kvdb.name>",

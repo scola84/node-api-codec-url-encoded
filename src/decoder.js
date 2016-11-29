@@ -22,6 +22,5 @@ export default class UrlDecoder extends Transform {
     } catch (error) {
       callback(error);
     }
-
   }
 }
